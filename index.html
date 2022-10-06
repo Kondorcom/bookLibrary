@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header"></div>
+        <div class="sidebar">
+            <h3>Add new book form</h3>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" >
+            <label for="title">Author:</label>
+            <input type="text" id="author" name="author" >
+            <label for="title">Pages:</label>
+            <input type="text" id="pages" name="pages" >
+            <label for="title">Read:</label>
+            <input type="checkbox" id="read" name="read" >
+            <div class="add_book_button">
+                <input type="button" id="add_book" value="Add book" onclick="addBookToLibrary()"/>
+            </div>
+        </div>
+        <div class="center">
+            <table id="book_table">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+            </table>
+            <!-- <table id="demoA">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+            </table> -->
+        </div>
+        
+        <div>
+            <input type="button" value="Add Top" onclick="addRow(1)"/>
+            <input type="button" value="Add Book" onclick="displayBooks()"/>
+        </div>
+        
+    </div>
+    <script src="exc_obj2_book_library.js"></script>
+</body>
+</html>
