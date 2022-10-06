@@ -52,7 +52,7 @@ const theHobbit3 = new Book(
 );
 
 myLibrary.push(theHobbit, theHobbit1, theHobbit2, theHobbit3);
-
+updateTable();
 function addBookToLibrary() {
   
   let get_title = document.getElementById("title").value;

@@ -20,13 +20,14 @@ body, html {
     flex-direction: column;
 
     align-items: center;
+    padding: 15px;
   }
   table {
-    width: 80%;
+    width: 90%;
   }
   .container{
     display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-columns: 2fr 6fr 2fr;
     grid-template-rows: minmax(100px, 1fr) minmax(400px, 4fr);
   }
   .container > div{
@@ -34,6 +35,9 @@ body, html {
   }
   .header{
     grid-column: 1/4;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
   }
   .sidebar{
     grid-row: 2/3;
@@ -41,6 +45,7 @@ body, html {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: minmax(20px, 30px) repeat(5, minmax(15px, 25px));
     gap: 10px;
+    padding: 15px;
   }
   label, input {
     border: 1px solid red;
